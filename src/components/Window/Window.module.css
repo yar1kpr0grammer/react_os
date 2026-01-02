@@ -25,6 +25,6 @@
 	border: none;
 }
 .content {
-	padding: var(--padding);
+	padding: var(--padding-s);
 	background: var(--window-background);
 }

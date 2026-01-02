@@ -1,0 +1,7 @@
+.input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: var(--padding);
+	min-width: 100px;
+}

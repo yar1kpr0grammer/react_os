@@ -1,0 +1,25 @@
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	gap: var(--padding);
+	color: var(--text-color);
+	padding-bottom: var(--padding-s);
+	border-bottom: 1px dashed var(--text-color);
+}
+
+.saveButton {
+	background-color: transparent;
+	color: var(--text-color);
+	font-size: var(--text);
+	border: none;
+	padding: var(--padding-s);
+	transition: var(--transition-duration);
+	border-radius: var(--radius);
+}
+.saveButton:hover {
+	background-color: rgba(255, 255, 255, 0.24);
+}

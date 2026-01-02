@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import style from "./Window.module.css";
-import { useDraggable } from "../../hooks/useDraggable";
+import { useDraggable } from "@/hooks/useDraggable";
 
 type WindowProps = {
 	title?: string;
@@ -34,7 +34,12 @@ export function Window({
 			<div className={style.title} onMouseDown={onMouseDown}>
 				{title}
 				<div>
-					<button className={style.closeButton}>x</button>
+					<button
+						className={style.closeButton}
+						onClick={() => alert("Будет потом")}
+					>
+						x
+					</button>
 				</div>
 			</div>
 

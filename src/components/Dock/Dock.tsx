@@ -1,19 +1,20 @@
 import { useWindowManager } from "../WindowManagerContext/WindowManagerContext";
 import type { ReactNode } from "react";
 import style from "./Dock.module.css";
+import reactIcon from "@/assets/react.svg";
 
 type DockProps = {
 	children: ReactNode;
 };
 
 type DockAppProps = {
-	icon: string;
+	icon?: string;
 	title: string;
 	window: ReactNode;
 	id: string;
 };
 
-export function DockApp({ icon, title, window, id }: DockAppProps) {
+export function DockApp({ icon = reactIcon, title, window, id }: DockAppProps) {
 	const { toggleWindow, isWindowOpen } = useWindowManager();
 
 	const opened = isWindowOpen(id);
@@ -23,7 +24,7 @@ export function DockApp({ icon, title, window, id }: DockAppProps) {
 			className={`${style.app} ${opened ? style.active : ""}`}
 			onClick={() => toggleWindow(id, window)}
 		>
-			<img src={icon} alt={title} />
+			<img className={style.icon} src={icon} alt={title} />
 		</button>
 	);
 }
