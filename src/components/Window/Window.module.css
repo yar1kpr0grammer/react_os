@@ -1,0 +1,27 @@
+.window {
+	position: absolute;
+	min-width: 100px;
+	background: #fff;
+	overflow: scroll;
+	border-radius: var(--basic-radius);
+}
+
+.title {
+	background: var(--primary-color);
+	color: var(--text-color);
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-between;
+	padding: 8px;
+	cursor: move;
+	user-select: none;
+}
+
+.closeButton {
+	background-color: var(--danger-color);
+	border-radius: var(--round);
+}
+.content {
+	padding: 10px;
+}

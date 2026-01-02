@@ -1,0 +1,31 @@
+.dock {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background: var(--primary-color);
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.app {
+	background-color: rgba(255, 255, 255, var(--basic-opasity));
+	border: none;
+	border-radius: var(--basic-radius);
+	transition: var(--transition-duration);
+	opacity: 0.6;
+}
+
+.app:hover {
+	background-color: rgba(255, 255, 255, var(--hover-opasity));
+}
+
+.app:active {
+	background-color: rgba(255, 255, 255, var(--active-opasity));
+}
+
+.app.active {
+	opacity: 1;
+	transform: scale(1.1);
+}

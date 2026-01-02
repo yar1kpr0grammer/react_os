@@ -1,0 +1,16 @@
+:root {
+	--primary-color: #245465;
+	--text-color: black;
+	--danger-color: red;
+
+	--basic-radius: 10px;
+
+	--basic-opasity: 0.15;
+	--hover-opasity: 0.3;
+	--active-opasity: 0.45;
+
+	--transition-duration: 0.15s;
+}
+body {
+	background-color: bisque;
+}
