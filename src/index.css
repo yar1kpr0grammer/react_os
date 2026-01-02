@@ -1,9 +1,17 @@
 :root {
-	--primary-color: #245465;
-	--text-color: black;
-	--danger-color: red;
+	--text-color: #bde8f5;
+	--danger-color: rgb(185, 61, 61);
+	--background: #0f2854;
+	--window-title: #1c4d8d;
+	--window-background: #4988c4;
 
-	--basic-radius: 10px;
+	--padding-l: 20px;
+	--padding: 12px;
+	--padding-s: 4px;
+
+	--radius: 16px;
+	--radius-s: calc(var(--radius) - var(--padding));
+	--shadow: 0 0 10px #000000;
 
 	--basic-opasity: 0.15;
 	--hover-opasity: 0.3;
@@ -11,6 +19,6 @@
 
 	--transition-duration: 0.15s;
 }
-body {
-	background-color: bisque;
+button {
+	cursor: pointer;
 }

@@ -3,18 +3,19 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding: 10px;
-	background: var(--primary-color);
+	padding: var(--padding);
+	background: var(--window-title);
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: var(--padding);
 }
 .app {
 	background-color: rgba(255, 255, 255, var(--basic-opasity));
 	border: none;
-	border-radius: var(--basic-radius);
+	border-radius: var(--radius);
 	transition: var(--transition-duration);
 	opacity: 0.6;
+	padding: var(--padding-s);
 }
 
 .app:hover {
@@ -23,9 +24,4 @@
 
 .app:active {
 	background-color: rgba(255, 255, 255, var(--active-opasity));
-}
-
-.app.active {
-	opacity: 1;
-	transform: scale(1.1);
 }

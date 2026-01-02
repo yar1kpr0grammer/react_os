@@ -1,6 +1,6 @@
 .desktop {
 	position: fixed;
 	inset: 0;
-	background: #1e1e1e; /* или обои */
+	background: var(--background); /* или обои */
 	overflow: hidden;
 }

@@ -3,25 +3,28 @@
 	min-width: 100px;
 	background: #fff;
 	overflow: scroll;
-	border-radius: var(--basic-radius);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
 }
 
 .title {
-	background: var(--primary-color);
+	background: var(--window-title);
 	color: var(--text-color);
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: var(--padding-l);
 	justify-content: space-between;
-	padding: 8px;
+	padding: var(--padding);
 	cursor: move;
 	user-select: none;
 }
 
 .closeButton {
 	background-color: var(--danger-color);
-	border-radius: var(--round);
+	border-radius: var(--radius-s);
+	border: none;
 }
 .content {
-	padding: 10px;
+	padding: var(--padding);
+	background: var(--window-background);
 }
