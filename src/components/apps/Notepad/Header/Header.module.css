@@ -8,7 +8,7 @@
 	gap: var(--padding);
 	color: var(--text-color);
 	padding-bottom: var(--padding-s);
-	border-bottom: 1px dashed var(--text-color);
+	border-bottom: 2px dashed var(--text-color);
 }
 
 .saveButton {

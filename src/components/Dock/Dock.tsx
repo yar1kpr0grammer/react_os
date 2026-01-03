@@ -2,6 +2,7 @@ import { useWindowManager } from "../WindowManagerContext/WindowManagerContext";
 import type { ReactNode } from "react";
 import style from "./Dock.module.css";
 import reactIcon from "@/assets/react.svg";
+import { Clock } from "../Clock/Clock";
 
 type DockProps = {
 	children: ReactNode;
@@ -30,5 +31,10 @@ export function DockApp({ icon = reactIcon, title, window, id }: DockAppProps) {
 }
 
 export function Dock({ children }: DockProps) {
-	return <div className={style.dock}>{children}</div>;
+	return (
+		<div className={style.dock}>
+			<div className={style.apps}>{children}</div>
+			<Clock />
+		</div>
+	);
 }

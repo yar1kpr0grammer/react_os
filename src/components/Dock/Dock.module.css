@@ -6,6 +6,13 @@
 	padding: var(--padding);
 	background: var(--window-title);
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: var(--shadow);
+}
+
+.apps {
+	display: flex;
 	flex-direction: row;
 	gap: var(--padding);
 }
